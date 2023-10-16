@@ -7,7 +7,7 @@ headers = {'content-type': 'application/json'}
 def test_match_intent():
     method = '/api/ml/get_intent'
 
-    query_list = ["What's the booking status for reservation ID XYZ789?"]
+    query_list = ["What's the booking status for reservation ID XYZ789?", 'book a ticket', "cancel my reservation"]
     for query in query_list:
         print(query)
         payload = {'utterance': query}
@@ -69,7 +69,9 @@ def test_delete_intent():
 
 if __name__ == '__main__':
 
-    test_add_intent()
-    test_delete_intent()
+    # test_add_intent()
+
     test_match_intent()
+
+    # test_delete_intent()
 
