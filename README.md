@@ -2,7 +2,7 @@
 This repository contains code designed for classifying user queries into specific intents, and it employs a retrieval-reranker approach. The primary steps involved in this approach are as follows:
 
 ### Data Indexing: 
-Initially, we have indexed a comprehensive set of example queries corresponding to various intents into an open-source vector database (qdrant). Each of these indexed queries is represented by embeddings generated using the "sentence-transformers/all-MiniLM-L6-v2" model. This model is responsible for converting the textual queries into numerical representations.
+Initially, we have indexed a set of example queries corresponding to various intents into an open-source vector database (qdrant). Each of these indexed queries is represented by embeddings generated using the "sentence-transformers/all-MiniLM-L6-v2" model. This model is responsible for converting the textual queries into numerical representations.
 
 ### Reranker Model: 
 For the reranking process, we utilize the "cross-encoder/ms-marco-MiniLM-L-6-v2" model. This model evaluates and ranks the similarity between the user query and the indexed queries, ultimately improving the accuracy of the intent classification.
@@ -22,11 +22,10 @@ These top 10 retrieved queries are then reranked by the "cross-encoder/ms-marco-
 The intent related to the query that achieved the highest reranked score is determined and returned as the intent of the user's query.
 
 ## How to Run and Test
-Here's a more structured and coherent explanation of the provided information:
 
 1. **Python Version**: The code is written in Python version 3.8, and it is important to note this requirement as it ensures compatibility with the codebase.
 
-2. **Requirements.txt File**: The "requirements.txt" file contains a list of all the necessary dependencies and packages required to run the code successfully. To install these dependencies, you can use the following command:
+2. **Requirements.txt**: The "requirements.txt" file contains a list of all the necessary dependencies and packages required to run the code successfully. To install these dependencies, you can use the following command:
    
    ```bash
    pip install -r requirements.txt
