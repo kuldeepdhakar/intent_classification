@@ -11,7 +11,7 @@ app = FastAPI()
 class intent_request(BaseModel):
     utterance: str
 
-@app.post("/api/ml/get_intent")
+@app.post("/match_intent")
 async def get_intent(request: intent_request):
     try:
         response = match_intent(query=request.utterance)
@@ -27,7 +27,7 @@ class add_request(BaseModel):
     examples: list
 
 
-@app.post('/api/ml/add_intent')
+@app.post('/add_intent')
 # @cross_origin()
 def _add_intent_(request: add_request):
     try:
@@ -42,7 +42,7 @@ class intent_delete_request(BaseModel):
     machine_name: str
 
 
-@app.post('/api/ml/delete_intent')
+@app.post('/delete_intent')
 # @cross_origin()
 def _delete_intent_(request: intent_delete_request):
     try:
