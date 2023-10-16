@@ -23,7 +23,7 @@ The intent related to the query that achieved the highest reranked score is dete
 
 ## How to Run and Test
 
-1. **Python Version**: The code is written in Python version 3.8, and it is important to note this requirement as it ensures compatibility with the codebase.
+1. **Python Version**: The code is written in Python version 3.8, and it is important to note this requirement as it ensures compatibility with the codebase. Please create a seperate virtual environment.
 
 2. **Requirements.txt**: The "requirements.txt" file contains a list of all the necessary dependencies and packages required to run the code successfully. To install these dependencies, you can use the following command:
    
