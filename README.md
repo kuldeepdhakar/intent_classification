@@ -34,13 +34,13 @@ Here's a more structured and coherent explanation of the provided information:
 
    This command simplifies the installation process by automatically fetching and installing all the required packages listed in the "requirements.txt" file.
 
-3. **Flask_api.py File**: The "flask_api.py" file is the core of the application and contains all the endpoints for the Flask API. To start the server and make the API accessible, you can execute this file. It serves as the entry point for running the application and handling API requests.
+3. **Flask_api.py**: The "flask_api.py" file is the core of the application and contains all the endpoints for the Flask API. To start the server and make the API accessible, you can execute this file. It serves as the entry point for running the application and handling API requests.
 
-4. **add_delete_match_intent.py File**: The "add_delete_match_intent.py" file includes essential functions for adding intents, deleting intents, and matching intents. These functions play a critical role in the intent management and classification processes.
+4. **add_delete_match_intent.py**: The "add_delete_match_intent.py" file includes essential functions for adding intents, deleting intents, and matching intents. These functions play a critical role in the intent management and classification processes.
 
-5. **Configure.py File**: The "configure.py" file is responsible for initializing the database (DB) and the retriever and reranker components. Proper configuration is pivotal for the correct functioning of the system, and this file handles those initializations.
+5. **Configure.py**: The "configure.py" file is responsible for initializing the database (DB) and the retriever and reranker components. Proper configuration is pivotal for the correct functioning of the system, and this file handles those initializations.
 
-6. **test_api.py File**: The "test_api.py" file provides predefined functions that are designed for testing all the available endpoints in the API. These testing functions are valuable for assessing the functionality and reliability of the API as they allow for systematic and automated testing procedures.
+6. **test_api.py**: The "test_api.py" file provides predefined functions that are designed for testing all the available endpoints in the API. These testing functions are valuable for assessing the functionality and reliability of the API as they allow for systematic and automated testing procedures.
 
 
 
